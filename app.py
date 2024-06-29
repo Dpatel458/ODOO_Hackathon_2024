@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
 
 APP_ID = '0a0a693e'
-API_KEY = '2bd272d141d42f8b9b783886cc1a01ef'
+API_KEY = '***' ## Sorry as GitHub is not allowing secret API key
 
 @app.route('/')
 def index():

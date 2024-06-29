@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Food Recommendations</h2>
+{% if recommendations %}
+    <h3>Recommendations</h3>
+    <ul>
+        {% for item in recommendations %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No recommendations available at this time.</p>
+{% endif %}
+{% endblock %}
